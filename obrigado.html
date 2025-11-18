@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obrigado pela compra — BBQ Ponto Raro</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Obrigado! Acompanhe as novidades e conteúdos no Instagram, YouTube e TikTok do BBQ Ponto Raro.">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.clarity.ms">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.clarity.ms">
+
+  <link rel="icon" href="https://bbqpontoraro.com.br/img/favicon.webp" type="image/webp" />
+
+  <style>
+    :root{
+      --ink:#0b0b0b; --muted:#475569; --brand:#8B0000;
+      --bg:#f8fafc; --card:#fff; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Poppins,sans-serif;
+      color:var(--ink); background:var(--bg);
+      display:flex; flex-direction:column; min-height:100dvh;
+    }
+    header, main, footer{ width:min(960px, 92vw); margin-inline:auto; }
+    header{ padding:18px 0 8px; text-align: center; }
+    .logo{ display:inline-flex; align-items:center; gap:.6rem; text-decoration:none; color:inherit }
+    .logo img{ width:140px; height:auto }
+    main{
+      flex:1; display:grid; place-items:center; text-align:center;
+      content-visibility:auto; contain-intrinsic-size: 600px;
+    }
+    .card{
+      background:var(--card); border:1px solid var(--border);
+      border-radius:14px; padding:28px 22px; box-shadow:0 8px 28px rgba(0,0,0,.06);
+      width:min(760px, 100%); margin-top:-6vh;
+    }
+    h1{ font-size:clamp(1.5rem, 3.8vw, 2.2rem); margin-bottom:.35rem }
+    p{ color:var(--muted); line-height:1.7 }
+    .cta{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center }
+    .btn{
+      display:inline-flex; align-items:center; gap:.6rem;
+      padding:.5rem 1.1rem; border-radius:5px; text-decoration:none; font-weight:700;
+      background:var(--brand); color:#fff;
+    }
+    .btn.secondary{ background:#111; color:#fff }
+    .social{
+      margin-top:18px; display:flex; gap:12px; justify-content:center
+    }
+    .social a{
+      width:44px; height:44px; border-radius:10px; border:1px solid var(--border);
+      display:grid; place-items:center; background:#fff; text-decoration:none;
+    }
+    .social img{ width:22px; height:22px }
+    footer{ color:#94a3b8; font-size:.92rem; padding:10px 0 22px; text-align:center }
+  </style>
+
+  <!-- GA4 (defer para não bloquear) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FWX4LYVS1L"></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FWX4LYVS1L');
+    // pageview dedicado
+    document.addEventListener('DOMContentLoaded',()=>{ gtag('event','view_thankyou'); });
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script defer>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u2hfmkgljn");
+  </script>
+</head>
+<body>
+  <header>
+    <a href="https://bbqpontoraro.com.br/" class="logo" aria-label="Voltar à página inicial">
+      <img src="https://bbqpontoraro.com.br/img/logo.png" alt="BBQ Ponto Raro — logo" width="140" height="40" decoding="async">
+    </a>
+  </header>
+
+  <main>
+    <section class="card" aria-live="polite">
+      <h1>Obrigado pela sua compra!</h1>
+      <p>Você está na lista dos que levam churrasco a sério.  
+        Estamos <em>finalizando um presente especial</em> e vamos divulgar primeiro no <strong>Instagram</strong>.
+        Siga as nossas redes para não perder quando sair.</p>
+
+      <div class="social" aria-label="Ícones de redes sociais">
+        <a href="https://www.instagram.com/bbqpontoraro" target="_blank" rel="noopener" aria-label="Instagram" data-social="instagram">
+          <img src="https://bbqpontoraro.com.br/img/instagram.webp" alt="" width="22" height="22" decoding="async" loading="lazy">
+        </a>
+        <a href="https://www.youtube.com/@bbqpontoraro" target="_blank" rel="noopener" aria-label="YouTube" data-social="youtube">
+          <img src="https://bbqpontoraro.com.br/img/youtube.webp" alt="" width="22" height="22" decoding="async" loading="lazy">
+        </a>
+        <a href="https://www.tiktok.com/@bbqpontoraro" target="_blank" rel="noopener" aria-label="TikTok" data-social="tiktok">
+          <img src="https://bbqpontoraro.com.br/img/tiktok.webp" alt="" width="22" height="22" decoding="async" loading="lazy">
+        </a>
+      </div>
+
+      <p style="margin-top:16px">Quer voltar para a página principal?</p>
+      <div class="cta"><a class="btn secondary" href="https://bbqpontoraro.com.br/">Voltar ao site</a></div>
+    </section>
+  </main>
+  <footer>&copy; 2025 BBQ Ponto Raro</footer>
+</body>
+</html>

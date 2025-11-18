@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade | BBQ Ponto Raro</title>
+  <meta name="description" content="Saiba como o BBQ Ponto Raro coleta, utiliza e protege seus dados pessoais conforme a LGPD." />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="https://bbqpontoraro.com.br/img/favicon.webp" type="image/webp" />
+  <style>
+    /* Estilos CSS permanecem os mesmos */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root{ --bg-a:#FFFFFA; --bg-b:#FFFFFA; --ink:#1a1a1a; --muted:#4a5568; --brand:#8B0000; --brand-dark:#A52A2A; --border:#e5e7eb; --radius:12px; }
+    html, body { height: 100%; }
+    body{ font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:var(--ink ); background: var(--bg-a); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; display:flex; flex-direction:column; }
+    .skip-link{ position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus, .skip-link:focus-visible{ left:1rem; top:1rem; width:auto; height:auto; padding:.5rem .75rem; background:#000; color:#fff; border-radius:.5rem; box-shadow:0 2px 8px rgba(0,0,0,.2); z-index:10000; }
+    :focus-visible{ outline:2px solid var(--brand); outline-offset:2px; }
+    .page{ width:100%; min-height:100dvh; display:flex; flex-direction:column; padding: clamp(12px, 1.8vw, 20px); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg-a); border-bottom: 1px solid var(--border); padding: 10px clamp(12px, 1.8vw, 20px); backdrop-filter: saturate(1.1) blur(4px); }
+    .header-content{ display:flex; align-items:center; justify-content:space-between; gap:1rem; max-width:1100px; margin-inline:auto; }
+    .logo img{ height:38px; width:auto; filter:none; transition:none; }
+    .site-footer { border-top: 1px solid var(--border); background: var(--bg-a); width: 100%; }
+    .site-footer .footer-inner { max-width: 1100px; margin-inline: auto; padding: clamp(16px, 2vw, 24px) clamp(12px, 1.8vw, 20px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; text-align: center; color: var(--muted); font-size: 0.92rem; }
+    .site-footer .footer-inner p { margin: 0; }
+    .site-footer .footer-inner a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
+    .site-footer .footer-inner a:hover { color: var(--brand-dark); }
+    main { flex-grow: 1; width: 100%; max-width: 1100px; margin-inline: auto; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; padding: 70px 0 1rem 0; content-visibility: auto; contain-intrinsic-size: 900px; }
+    h1{ font-weight:700; letter-spacing:-.02em; font-size: clamp(1.7rem, 7.5vw, 2.4rem); line-height:1.3; max-width:820px; margin-bottom:.5rem; color: #111111; }
+    h2{ margin-top:1.6rem; font-size: clamp(1.05rem, 2.5vw, 1.25rem); color: #1c1a1a; }
+    h3{ margin-top:1.2rem; font-size: clamp(1rem, 2vw, 1.1rem); color: #1c1a1a; }
+    .muted { color:var(--muted); }
+    p{ margin:.5rem 0 0; max-width:85ch; }
+    ul, dl { margin:.5rem 0 0; }
+    li, dd { max-width:85ch; }
+    ul { padding-left: 1.25rem; display:grid; gap:.35rem; }
+    dt { font-weight: 600; color: var(--ink); }
+    dd { margin: .25rem 0 .75rem 1.25rem; }
+    a{ color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover{ color: var(--brand-dark); }
+    .box{ background:#ffffff; border:1px solid var(--border); border-radius:12px; padding:16px; }
+    .social-links{ display:flex; align-items:center; gap:.6rem; }
+    .social-links a{ width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border:1px solid var(--border); background:#fff; border-radius:8px; transition:transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .social-links a:hover{ background: rgba(139,0,0,.06); border-color: #e0d3d3; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139,0,0,.12); }
+    .social-links img{ width:20px; height:20px; filter: invert(10%) sepia(90%) saturate(6200%) hue-rotate(355deg) brightness(75%) contrast(110%); }
+    @media (max-width: 767px) { main { gap: clamp(16px, 4vh, 24px); padding: 70px 0 1rem 0; } h1 { font-size: clamp(1.5rem, 6.5vw, 2rem); max-width: 95%; } .logo img { height:36px; } }
+    @media (min-width: 768px){ .logo img { height: 40px; } h1 { font-size: clamp(2rem, 3.8vw, 2.6rem); line-height:1.25; max-width:none; } }
+  </style>
+</head>
+<body>
+    <header class="header" role="banner">
+      <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
+      <div class="header-content" aria-label="Topo do site">
+        <a href="https://bbqpontoraro.com.br" class="logo" aria-label="Voltar para a página inicial">
+          <img src="https://bbqpontoraro.com.br/img/logo.webp" alt="Logo BBQ Ponto Raro" width="160" height="40" decoding="async" fetchpriority="high" />
+        </a>
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="https://www.youtube.com/@bbqpontoraro" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://bbqpontoraro.com.br/img/youtube.webp" alt="YouTube" width="20" height="20" decoding="async" loading="lazy" /></a>
+          <a href="https://www.tiktok.com/@bbqpontoraro" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://bbqpontoraro.com.br/img/tiktok.webp" alt="TikTok" width="20" height="20" decoding="async" loading="lazy" /></a>
+          <a href="https://www.instagram.com/bbqpontoraro" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://bbqpontoraro.com.br/img/instagram.webp" alt="Instagram" width="20" height="20" decoding="async" loading="lazy" /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+    <main id="main" class="legal">
+      <h1>Política de Privacidade</h1>
+      <p class="muted">Última atualização: 11 de novembro de 2025</p>
+      <p>Esta Política de Privacidade descreve como o <strong>BBQ Ponto Raro</strong> ("nós" ) coleta, utiliza, armazena, compartilha e protege os dados pessoais dos usuários ("você") em conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+
+      <h2>1. Quem somos e contato</h2>
+      <p>O responsável pelo tratamento dos dados é <strong>Marcel Silva</strong> (pessoa física). Para qualquer questão relacionada a esta política, você pode contatar nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: <a href="mailto:contato@bbqpontoraro.com.br">contato@bbqpontoraro.com.br</a>.</p>
+
+      <h2>2. Quais dados coletamos</h2>
+      <ul>
+        <li><strong>Dados fornecidos por você:</strong> Nome, e-mail e mensagens enviadas através de formulários de contato.</li>
+        <li><strong>Dados de navegação:</strong> Endereço IP, tipo de navegador, modelo do dispositivo, páginas visitadas, tempo de permanência, cookies e eventos de interação (coletados por ferramentas como Google Analytics 4 e Microsoft Clarity).</li>
+        <li><strong>Dados transacionais:</strong> Status de pagamento, identificadores de pedido e outros dados necessários para a entrega de produtos digitais, processados pela plataforma <strong>Kiwify</strong>.</li>
+      </ul>
+
+      <h2>3. Finalidades e bases legais</h2>
+      <div class="box">
+        <dl>
+          <dt>Execução de contrato</dt>
+          <dd>Para entregar e fornecer suporte aos produtos digitais que você adquiriu.</dd>
+          <dt>Interesse legítimo</dt>
+          <dd>Para analisar métricas de uso do site, melhorar nossos serviços e prevenir fraudes.</dd>
+          <dt>Consentimento</dt>
+          <dd>Para enviar comunicações de marketing e utilizar cookies não essenciais. Seu consentimento pode ser revogado a qualquer momento.</dd>
+          <dt>Obrigação legal</dt>
+          <dd>Para cumprir exigências fiscais e contábeis, como a manutenção de registros de transações.</dd>
+        </dl>
+      </div>
+
+      <h2>4. Cookies e tecnologias</h2>
+      <p>Usamos cookies e tecnologias similares para melhorar sua experiência e analisar o uso do site. Você pode gerenciar suas preferências através do banner de cookies que aparece em sua primeira visita.</p>
+      
+      <h3>Categorias de cookies utilizados:</h3>
+      <ul>
+        <li><strong>🔒 Cookies Necessários:</strong> Essenciais para o funcionamento básico do site (ex: armazenamento de suas preferências de cookies). Estão sempre ativos e não podem ser desativados.</li>
+        <li><strong>📊 Cookies Analíticos:</strong> Utilizados para análise de tráfego e comportamento através do Google Analytics 4 (GA4) e Microsoft Clarity. Requerem seu consentimento para serem ativados.</li>
+        <li><strong>🎥 Cookies Funcionais:</strong> Permitem funcionalidades aprimoradas, como a reprodução de vídeos incorporados do YouTube. Podem ser ativados ou desativados em suas preferências.</li>
+      </ul>
+
+      <h3>Ferramentas específicas:</h3>
+      <dl>
+        <dt>Google Analytics 4 (GA4)</dt>
+        <dd>Coleta dados anônimos de navegação, como páginas visitadas, tempo de sessão e eventos de interação, para entendermos como nosso site é utilizado.</dd>
+        <dt>Microsoft Clarity</dt>
+        <dd>Grava sessões de usuários de forma anônima (movimentos do mouse, cliques, rolagem) e gera mapas de calor para análise de experiência do usuário (UX).</dd>
+      </dl>
+      <p>Você também pode bloquear ou gerenciar cookies diretamente nas configurações do seu navegador, mas isso pode afetar algumas funcionalidades do site. Para mais informações, consulte a documentação do seu navegador.</p>
+
+      <h2>5. Compartilhamento com terceiros</h2>
+      <p>Não vendemos seus dados. O compartilhamento ocorre apenas com operadores estritamente necessários para a nossa operação:</p>
+      <ul>
+        <li><strong>Hospedagem:</strong> Netlify.</li>
+        <li><strong>Analytics/UX:</strong> Google (GA4) e Microsoft (Clarity).</li>
+        <li><strong>Pagamentos/Checkout:</strong> Kiwify.</li>
+        <li><strong>Comunicação:</strong> Provedores de e-mail/SMTP para envio de confirmações e suporte.</li>
+      </ul>
+
+      <h2>6. Segurança e retenção</h2>
+      <p>Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não autorizados, perda ou alteração. Retemos os dados apenas pelo tempo necessário para cumprir as finalidades informadas, respeitando sempre as obrigações legais e regulatórias.</p>
+
+      <h2>7. Direitos do titular (LGPD)</h2>
+      <p>Você pode, a qualquer momento, exercer seus direitos de acesso, correção, eliminação, portabilidade e revogação do consentimento. Para isso, basta entrar em contato pelo e-mail <a href="mailto:contato@bbqpontoraro.com.br">contato@bbqpontoraro.com.br</a>.</p>
+
+      <h2>8. Menores de 18 anos</h2>
+      <p>Nossos conteúdos e produtos não são direcionados a menores de 18 anos. Caso identifiquemos a coleta não intencional de dados de menores, procederemos com a sua eliminação imediata.</p>
+
+      <h2>9. Alterações na política</h2>
+      <p>Esta Política poderá ser atualizada. A versão vigente será sempre a publicada nesta página, com a data da última atualização visível no topo.</p>
+
+      <h2>Agora você pode:</h2>
+      <ul>
+        <li><a href="https://bbqpontoraro.com.br"><strong>Voltar ao início do site</strong></a></li>
+        <li><a href="https://bbqpontoraro.com.br/termo-de-uso.html"><strong>Ler os Termos de Uso</strong></a></li>
+      </ul>  
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <p>&copy; 2025 BBQ Ponto Raro</p>
+        <p>
+          <a href="https://bbqpontoraro.com.br/politica-de-privacidade.html">Política</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://bbqpontoraro.com.br/termo-de-uso.html">Termos</a>
+          &nbsp;&middot;&nbsp;
+          Suporte: <a href="mailto:contato@bbqpontoraro.com.br">contato@bbqpontoraro.com.br</a>
+        </p>
+      </div>
+    </footer>
+    </div>
+</body>
+</html>
